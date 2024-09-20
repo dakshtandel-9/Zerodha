@@ -7,7 +7,7 @@ const Orders = () => {
   let [orders, setOrders] = useState([])
 
   useEffect(() => {
-    axios("http://localhost:3002/allOrders").then((res) => {
+    axios("https://zerodha-z2zr.onrender.com/allOrders").then((res) => {
       setOrders(res.data)
     })
   })
